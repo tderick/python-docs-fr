@@ -6,14 +6,14 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-21 16:37+0200\n"
-"PO-Revision-Date: 2022-10-18 12:29+0200\n"
+"PO-Revision-Date: 2022-10-29 20:31+0100\n"
 "Last-Translator: Antoine Wecxsteen\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: library/logging.rst:2
 msgid ":mod:`logging` --- Logging facility for Python"
@@ -85,8 +85,8 @@ msgstr ""
 #: library/logging.rst:40
 msgid "Loggers expose the interface that application code directly uses."
 msgstr ""
-"les enregistreurs (*loggers* en anglais) exposent l'interface que le code de "
-"l'application utilise directement ;"
+"Les enregistreurs (*loggers* en anglais) exposent l'interface que le code de "
+"l'application utilise directement."
 
 #: library/logging.rst:41
 msgid ""
@@ -1139,7 +1139,7 @@ msgstr ""
 
 #: library/logging.rst:711
 msgid "Contains all the information pertinent to the event being logged."
-msgstr ""
+msgstr "Contient toutes les informations relatives à l'événement enregistré."
 
 #: library/logging.rst:713
 msgid ""
@@ -1147,11 +1147,13 @@ msgid ""
 "combined using ``msg % args`` to create the :attr:`message` field of the "
 "record."
 msgstr ""
+"Les principales informations sont transmises dans :attr:`msg` et :attr:"
+"`args`, qui sont combinés en utilisant ``msg % args`` pour créer le champ :"
+"attr:`message` de l'enregistrement."
 
 #: library/logging.rst:0
-#, fuzzy
 msgid "Parameters"
-msgstr "Paramètres :"
+msgstr "Paramètres"
 
 #: library/logging.rst:717
 msgid ""
@@ -1159,6 +1161,9 @@ msgid ""
 "Note that this name will always have this value, even though it may be "
 "emitted by a handler attached to a different (ancestor) logger."
 msgstr ""
+"Le nom de l'enregistreur utilisé pour enregistrer l'événement représenté par "
+"ce LogRecord. Notez que ce nom aura toujours cette valeur, même s'il peut "
+"être émis par un gestionnaire attaché à un autre enregistreur (ancêtre)."
 
 #: library/logging.rst:721
 msgid ""
@@ -1166,20 +1171,30 @@ msgid ""
 "this is converted to *two* attributes of the LogRecord: ``levelno`` for the "
 "numeric value and ``levelname`` for the corresponding level name."
 msgstr ""
+"Le niveau numérique de journalisation de l'événement (un parmi DEBUG, INFO, "
+"etc.) Notez qu'il est converti en *deux* attributs du LogRecord : "
+"``levelno`` pour la valeur numérique et ``levelname`` pour le nom de niveau "
+"correspondant."
 
 #: library/logging.rst:725
 msgid "The full pathname of the source file where the logging call was made."
 msgstr ""
+"Le chemin d'accès complet du fichier source où l'appel de journalisation a "
+"été effectué."
 
 #: library/logging.rst:727
 msgid "The line number in the source file where the logging call was made."
 msgstr ""
+"Le numéro de ligne dans le fichier source où l'appel de journalisation a été "
+"effectué."
 
 #: library/logging.rst:729
 msgid ""
 "The event description message, possibly a format string with placeholders "
 "for variable data."
 msgstr ""
+"Le message de description de l'événement, éventuellement une chaîne formatée "
+"avec des espaces réservés pour les données variables."
 
 #: library/logging.rst:731
 msgid ""
@@ -1835,9 +1850,9 @@ msgstr ""
 msgid ""
 "Levels are internally integers (as they need to be compared in the logging "
 "logic). This function is used to convert between an integer level and the "
-"level name displayed in the formatted log output by means of the "
-"``%(levelname)s`` format specifier (see :ref:`logrecord-attributes`), and "
-"vice versa."
+"level name displayed in the formatted log output by means of the ``"
+"%(levelname)s`` format specifier (see :ref:`logrecord-attributes`), and vice "
+"versa."
 msgstr ""
 
 #: library/logging.rst:1141
